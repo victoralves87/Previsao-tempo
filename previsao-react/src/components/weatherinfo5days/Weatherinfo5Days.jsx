@@ -28,15 +28,17 @@ function Weatherinfo5Days({weather5Days}){
 
   return (
     <div className="weather-container">
-      <p>Previsão proximos 5 dias</p>
+      <h3>Previsão proximos 5 dias</h3>
+      <div className="weather-list">
       {next5DaysForecast.map(forecast => (
-        <div key={forecast.dt} className="weather-day">
-          <p>{convertDate(forecast)}</p>
+        <div key={forecast.dt} className="weather-item">
+          <p className="days">{convertDate(forecast)}</p>
           <img src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`} alt="icone" />
           <p>{forecast.weather[0].description}</p>
           <p>{Math.round(forecast.main.temp_min)}°C min / {Math.round(forecast.main.temp_max)}°C Max</p>
         </div>
       ))}
+      </div>
     </div>
   )
 }

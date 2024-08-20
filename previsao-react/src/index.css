@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "DM Serif Text", serif;
-    background: linear-gradient(to right, #00b4db, #0083b0);
+    background: url("./assets/ceu.jpg") no-repeat center center;
+    background-size: cover;
     color: #333;
     line-height: 1.6;
 }

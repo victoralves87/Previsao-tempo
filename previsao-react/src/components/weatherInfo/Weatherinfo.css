@@ -1,5 +1,5 @@
 .weather-container{
-    background-color: rgba(240, 236, 236);
+    background-color: rgb(240, 239, 236);
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0;
@@ -7,6 +7,8 @@
 
 h2{
     font-size: 2rem;
+    color: #ffff;
+    font-weight: bolder;
 }
 
 .weather-info{
